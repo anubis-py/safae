@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Safae BALLA</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    
+    :root {
+      --primary: #6153cc;
+      --secondary: #3d348b;
+      --light-grey: #f5f5f5;
+      --dark-grey: #333333;
+      --text: #555555;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    body {
+      color: var(--text);
+      background: white;
+      line-height: 1.5;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .container {
+      max-width: 210mm;
+      margin: 0 auto;
+      padding: 20px;
+      background: white;
+    }
+    
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid var(--light-grey);
+    }
+    
+    .identity {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--primary);
+    }
+    
+    .name-title h1 {
+      color: var(--primary);
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    
+    .name-title h2 {
+      color: var(--secondary);
+      font-size: 18px;
+      font-weight: 500;
+    }
+    
+    .contact-info {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+      font-size: 14px;
+    }
+    
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .contact-item i {
+      color: var(--primary);
+      font-size: 16px;
+    }
+    
+    .main-content {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 30px;
+    }
+    
+    .section {
+      margin-bottom: 25px;
+    }
+    
+    .section-title {
+      color: var(--primary);
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid var(--primary);
+    }
+    
+    .timeline-item {
+      margin-bottom: 20px;
+    }
+    
+    .timeline-title {
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--dark-grey);
+      margin-bottom: 5px;
+    }
+    
+    .timeline-period {
+      font-weight: 500;
+      font-size: 14px;
+      color: var(--primary);
+      margin-bottom: 5px;
+    }
+    
+    .timeline-description {
+      font-size: 14px;
+    }
+    
+    .skills-list {
+      list-style: none;
+    }
+    
+    .skill-category {
+      font-weight: 600;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+    
+    .skill-item {
+      position: relative;
+      padding-left: 15px;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+    
+    .skill-item::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+    }
+    
+    .about-text {
+      font-size: 15px;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+    
+    .experience-item {
+      margin-bottom: 25px;
+    }
+    
+    .experience-title {
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--dark-grey);
+    }
+    
+    .experience-company {
+      font-weight: 500;
+      font-size: 15px;
+      color: var(--secondary);
+    }
+    
+    .experience-date {
+      font-size: 14px;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+    
+    .experience-description {
+      font-size: 14px;
+    }
+    
+    .experience-description ul {
+      padding-left: 20px;
+    }
+    
+    .experience-description li {
+      margin-bottom: 3px;
+    }
+    
+    @media print {
+      body {
+        margin: 0;
+        padding: 0;
+        background: white;
+      }
+      
+      .container {
+        width: 100%;
+        max-width: none;
+        padding: 15mm;
+        margin: 0;
+        box-shadow: none;
+      }
+      
+      .no-print {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- En-tête avec photo et informations personnelles -->
+    <header class="header">
+      <div class="identity">
+        <img src="bella.jpg" alt="Safae BALLA" class="photo">
+        <div class="name-title">
+          <h1>Safae BALLA</h1>
+          <h2>Chargée RH</h2>
+        </div>
+      </div>
+      <div class="contact-info">
+        <div class="contact-item">
+          <i>📍</i>
+          <span>NR 17 LOTIS AZHAROUNE KENITRA</span>
+        </div>
+        <div class="contact-item">
+          <i>📱</i>
+          <span>0744444510</span>
+        </div>
+        <div class="contact-item">
+          <i>📧</i>
+          <span>safaeballa@gmail.com</span>
+        </div>
+        <div class="contact-item">
+          <i>🎂</i>
+          <span>28/04/1997 à Kenitra</span>
+        </div>
+        <div class="contact-item">
+          <i>👤</i>
+          <span>Célibataire, Marocaine</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contenu principal divisé en deux colonnes -->
+    <div class="main-content">
+      <!-- Colonne gauche -->
+      <div class="left-column">
+        <!-- Section À propos -->
+        <section class="section">
+          <h3 class="section-title">À propos</h3>
+          <p class="about-text">
+            Professionnelle en gestion des ressources humaines, rigoureuse et organisée, avec une solide expérience dans l'administration du personnel et le recrutement.
+          </p>
+          <p class="about-text">
+            Compétente dans la gestion des dossiers du personnel, le suivi des absences et congés, et la conformité avec la législation du travail.
+          </p>
+          <p class="about-text">
+            Capacité à assurer un bon climat social et à participer à la gestion des conflits dans l'environnement professionnel.
+          </p>
+        </section>
+
+        <!-- Section Compétences -->
+        <section class="section">
+          <h3 class="section-title">Compétences</h3>
+          <ul class="skills-list">
+            <li>
+              <p class="skill-category">Langues</p>
+              <p class="skill-item">ARABE : Maternelle</p>
+              <p class="skill-item">FRANÇAIS : Courant</p>
+              <p class="skill-item">ANGLAIS : Moyen</p>
+            </li>
+            <li>
+              <p class="skill-category">Logiciels de gestion</p>
+              <p class="skill-item">Excel - Word - PowerPoint</p>
+              <p class="skill-item">DGI PAIE - OPTITIME</p>
+            </li>
+            <li>
+              <p class="skill-category">Projet réalisé</p>
+              <p class="skill-item">Projet de fin d'études (Licence) : Système d'information des ressources humaines</p>
+              <p class="skill-item">Projet de fin d'étude (Master) : L'impact de la crise sanitaire sur la transformation digitale de la fonction RH (cas de SEWS-Maroc)</p>
+            </li>
+            <li>
+              <p class="skill-category">Atouts Personnels</p>
+              <p class="skill-item">Le respect : des consignes, des personnes et aussi de l'engagement professionnel</p>
+              <p class="skill-item">Le sens de responsabilité : capable d'assumer des responsabilités et de prendre des décisions</p>
+              <p class="skill-item">L'investissement : Engagé et Capable d'assurer un travail de qualité</p>
+            </li>
+            <li>
+              <p class="skill-category">Intérêts</p>
+              <p class="skill-item">Sport - Musique - Voyage - Lecture</p>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Section Formation -->
+        <section class="section">
+          <h3 class="section-title">Formation</h3>
+          <div class="timeline-item">
+            <h4 class="timeline-title">Master en Management des Ressources Humaines</h4>
+            <p class="timeline-period">2019 — 2021</p>
+            <p class="timeline-description">Université Ibn Tofail</p>
+          </div>
+          <div class="timeline-item">
+            <h4 class="timeline-title">Licence en Management des Ressources Humaines et Organisation des Entreprises</h4>
+            <p class="timeline-period">2017 — 2019</p>
+            <p class="timeline-description">Université Ibn Tofail</p>
+          </div>
+          <div class="timeline-item">
+            <h4 class="timeline-title">DEUG en Sciences Économiques et Gestion</h4>
+            <p class="timeline-period">2017 — 2018</p>
+            <p class="timeline-description">Université Ibn Tofail</p>
+          </div>
+          <div class="timeline-item">
+            <h4 class="timeline-title">Baccalauréat option Science Physique</h4>
+            <p class="timeline-period">2014 — 2015</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- Colonne droite -->
+      <div class="right-column">
+        <!-- Section Expérience professionnelle -->
+        <section class="section">
+          <h3 class="section-title">Expérience professionnelle</h3>
+          
+          <div class="experience-item">
+            <h4 class="experience-title">CHARGÉE RH</h4>
+            <p class="experience-company">OL GESTION DAKHLA</p>
+            <p class="experience-date">Décembre 2024 — Aujourd'hui</p>
+            <div class="experience-description">
+              <ul>
+                <li>Administration du personnel (SIRH/Logiciel de Gestion de Personnel)</li>
+                <li>Suivre les absences, les congés et maladies</li>
+                <li>Suivre le pointage et traitement des anomalies</li>
+                <li>Gestion des dossiers du personnel (contrats, avenants, documents légaux)</li>
+                <li>Assurer la conformité avec législation du travail</li>
+                <li>Assurer un bon climat social</li>
+                <li>Participer à la gestion des conflits</li>
+                <li>Suivre les sessions de formation</li>
+                <li>Recrutement et accueil des nouveaux employés</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="experience-item">
+            <h4 class="experience-title">OPÉRATRICE RH</h4>
+            <p class="experience-company">SBS PORCHER</p>
+            <p class="experience-date">Juillet 2023 — Décembre 2024</p>
+            <div class="experience-description">
+              <ul>
+                <li>Maîtrise du programme OPTITIME (gestion du temps, de présence et contrôle d'accès)</li>
+                <li>Suivre les pointages journaliers des salariés</li>
+                <li>Maîtrise du logiciel DGI-Paie</li>
+                <li>Traitement, analyse et contrôle des éléments relatifs à la paie</li>
+                <li>Réalisation et émission des journaux et bulletins de paie</li>
+                <li>Suivre les dossiers de gestion des personnels notamment les congés payés et congés maladie</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="experience-item">
+            <h4 class="experience-title">STAGE</h4>
+            <p class="experience-company">SOCIETE INOSCHV</p>
+            <p class="experience-date">Février 2023 (3 Mois)</p>
+            <div class="experience-description">
+              <ul>
+                <li>Administration des avantages sociaux</li>
+                <li>Gestion des dossiers du personnel</li>
+                <li>Recrutement et sélection</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="experience-item">
+            <h4 class="experience-title">STAGE</h4>
+            <p class="experience-company">SANLAM ASSURANCE</p>
+            <p class="experience-date">Avril 2022 (3 Mois)</p>
+            <div class="experience-description">
+              <p>Assurance Automobile:</p>
+              <ul>
+                <li>Les documents automobiles / CYCLOS</li>
+                <li>Les usages</li>
+                <li>Les franchises</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="experience-item">
+            <h4 class="experience-title">STAGE</h4>
+            <p class="experience-company">SOCIÉTÉ SEWS-MAROC</p>
+            <p class="experience-date">Novembre 2021 (3 Mois)</p>
+            <div class="experience-description">
+              <ul>
+                <li>Changement du contrat</li>
+                <li>Les sanctions disciplinaires</li>
+                <li>Le recrutement</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="experience-item">
+            <h4 class="experience-title">STAGE</h4>
+            <p class="experience-company">CABINET DE CONSEIL « MSC »</p>
+            <p class="experience-date">Septembre 2021 (1 Mois)</p>
+            <div class="experience-description">
+              <ul>
+                <li>Projet de formation (Recherche des consultants, Vivier de consultants, Plan de formation...)</li>
+                <li>Processus de recrutement (Connaissances des profils recherchés, Rédaction d'offre d'emploi, La publication de l'offre, Réception des CV, Vivier candidats...)</li>
+                <li>Benchmark concurrentiel</li>
+                <li>Fiche de poste (L'identification du poste, L'intitulé du poste, Missions principales, les activités...)</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="experience-item">
+            <h4 class="experience-title">STAGE</h4>
+            <p class="experience-company">SOCIÉTÉ SEWS-MAROC</p>
+            <p class="experience-date">Août 2019 (1 Mois)</p>
+            <div class="experience-description">
+              <p>Stage « Société SEWS-Maroc » au sein du département des Ressources humaines</p>
+            </div>
+          </div>
+          
+          <div class="experience-item">
+            <h4 class="experience-title">STAGE</h4>
+            <p class="experience-company">SOCIÉTÉ SAZRIT</p>
+            <p class="experience-date">Avril 2018 (2 Mois)</p>
+          </div>
+        </section>
+      </div>
+    </div>
+    
+    <!-- Bouton d'impression - visible uniquement à l'écran -->
+    <div class="no-print" style="text-align: center; margin-top: 30px;">
+      <button onclick="window.print()" style="padding: 10px 20px; background: var(--primary); color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: 500;">
+        Imprimer / Enregistrer en PDF
+      </button>
+    </div>
+  </div>
+</body>
+</html> 
